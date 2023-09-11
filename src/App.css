@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: rgb(13, 30, 44);
+}
+.win {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffff;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  padding: 30px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 50px;
+}
+.die-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.die {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(84% / 5);
+  height: 50.4px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  background-color: white;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+.title h3 {
+  text-align: center;
+}
+.roll,
+.start,
+.exit {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(70, 44, 255);
+  color: white;
+  width: 130px;
+  font-size: larger;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.exit {
+  background-color: #900;
+}
+.roll:focus {
+  outline: none;
+}
+.roll:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+.die-held {
+  background-color: #59e391;
+}
+.dice {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.rolls {
+  text-align: center;
+  color: #59e391;
+}
